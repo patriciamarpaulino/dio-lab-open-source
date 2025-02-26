@@ -75,21 +75,85 @@ Atente-se para a seguir as orientações para a contribuição, principalmente:
 ](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 
 Após criar o seu Pull Request, nossa automação irá validar a sua submissão. Caso esteja tudo certo, será retornada uma mensagem indicado que seu PR foi aprovado. Do contrário, leia atentamente as orientações e verifique os arquivos modificados para saber se atende as instruções para contribuição.
-    
-    
-## Convenção de Commits 
 
-| Tipo de Commit |Descrição                                                            | Exemplo
-| ---------------|----------------------------------------------------------------------|-----------
-| `feat`         | Adiciona uma nova funcionalidade ao projeto.                         | `feat: add USENAME.md profile`
-| `fix`          | Corrige um bug ou problema no projeto.                               | `fix: fixed issue fix#IssueNumber`
-| `docs`         | Altera a documentação do projeto.| `docs: update README.md`
-| `style`        | Realiza mudanças na aparência, sem alterar a funcionalidade.         | `style: add EFFECTNAME to COMPONENT`
-| `refactor`     | Realiza mudanças no código que não alteram a funcionalidade.         | `refactor: refactor at CLASSNAME`
-| `test`         | Adiciona ou modifica testes no projeto.                              | `test: add unit test for UserService`
+    ### 🚀 **Convenção de Commits – Bootcamp Heineken - Inteligência Artificial Aplicada a Dados com Copilot**  
+
+Esta convenção mantém o histórico de commits **organizado, legível e consistente**, facilitando a colaboração e rastreabilidade no projeto.  
+
+---
+
+#### 🎯 **Formato padrão:**  
 
 
-## Referências
-- [ANGULAR. Contributing to Angular](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md)
-- [CONVENTIONAL COMMITS. Summary](https://www.conventionalcommits.org/en/v1.0.0/)
-- [GITHUB. Configurar diretrizes para os contribuidores do repositório](https://docs.github.com/pt/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors)
+🔎 **Regras:**  
+- Use **verbos no imperativo** na descrição (ex.: "adiciona", "corrige").  
+- Descrição **curta e objetiva** (máximo 72 caracteres).  
+- Separe corpo e rodapé com **uma linha em branco** (se necessário detalhar).  
+- **Referencie issues ou tarefas** no rodapé se aplicável (ex.: `Refs: #123`).  
+
+---
+
+#### 📝 **Tipos de commit:**  
+
+| Tipo        | Descrição                                       | Exemplo                                      |
+|-------------|-------------------------------------------------|----------------------------------------------|
+| **feat**    | Adição de nova funcionalidade                   | `feat(data): adiciona script para limpeza`  |
+| **fix**     | Correção de bugs                                | `fix(api): corrige erro na requisição`      |
+| **docs**    | Atualizações de documentação                    | `docs(readme): atualiza instruções de uso`  |
+| **style**   | Mudanças visuais ou de formatação (sem lógica)  | `style(code): ajusta indentação e espaçamento`|
+| **refactor**| Refatorações que não alteram a funcionalidade   | `refactor(data): melhora legibilidade do código`|
+| **test**    | Criação ou ajuste de testes                     | `test(model): adiciona testes unitários`    |
+| **chore**   | Tarefas administrativas e configurações         | `chore(env): atualiza variáveis de ambiente`|
+| **perf**    | Melhorias de performance                        | `perf(query): otimiza consultas SQL`        |
+| **ci**      | Alterações no pipeline de integração contínua   | `ci(github-actions): ajusta workflow de deploy`|
+| **revert**  | Reversão de commits                             | `revert: desfaz commit anterior`            |
+
+---
+
+#### 🧩 **Escopos sugeridos:**  
+
+- **data** – Manipulação e tratamento de dados  
+- **copilot** – Implementações com Microsoft Copilot  
+- **sql** – Scripts e consultas SQL  
+- **ai** – Funcionalidades relacionadas à inteligência artificial  
+- **api** – Endpoints e comunicação entre sistemas  
+- **docs** – Documentação do projeto  
+- **config** – Arquivos de configuração e ambiente  
+- **deps** – Gerenciamento de dependências  
+- **tests** – Criação e manutenção de testes  
+
+---
+
+#### 📖 **Exemplos práticos:**  
+
+- `feat(ai): implementa modelo preditivo de vendas`  
+- `fix(sql): corrige erro em consulta de usuários`  
+- `docs(readme): adiciona instruções de configuração`  
+- `style(code): remove espaços desnecessários`  
+- `refactor(data): simplifica função de transformação`  
+- `test(api): cria testes para endpoint de produtos`  
+- `chore(deps): atualiza dependências do projeto`  
+- `ci(actions): corrige falha no workflow de build`  
+
+---
+
+#### 💡 **Dicas:**  
+✅ **Commits pequenos e frequentes** ajudam no controle de alterações.  
+✅ Use `git commit --amend` para corrigir o último commit (antes do push).  
+✅ **Prefira `git rebase` ao invés de `git merge`** para um histórico limpo.  
+✅ Referencie tarefas ou issues sempre que possível.  
+
+### 📚 Referências Bibliográficas  
+
+CONVENTIONAL COMMITS. *Conventional Commits Specification v1.0.0.* 2024. Disponível em: <https://www.conventionalcommits.org>. Acesso em: 21 fev. 2025.  
+
+GIT DOCUMENTATION. *Git Tools - Rewriting History.* 2024. Disponível em: <https://git-scm.com/docs>. Acesso em: 21 fev. 2025.  
+
+ANGULAR. *Git Commit Guidelines.* 2024. Disponível em: <https://github.com/angular/angular/blob/main/CONTRIBUTING.md#commit>. Acesso em: 21 fev. 2025.  
+
+KEEP A CHANGELOG. *Principles of Changelogs.* 2024. Disponível em: <https://keepachangelog.com>. Acesso em: 21 fev. 2025.  
+
+GITHUB DOCS. *About commits.* 2024. Disponível em: <https://docs.github.com>. Acesso em: 21 fev. 2025.  
+
+
+
